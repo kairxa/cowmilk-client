@@ -1,0 +1,51 @@
+{
+  "name": "cowmilk-client",
+  "version": "0.0.0",
+  "description": "Client repo for cowmilk, an open platform for hosting comics.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WorksinMagic/cowmilk-client.git"
+  },
+  "author": "Works in Magic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WorksinMagic/cowmilk-client/issues"
+  },
+  "homepage": "https://github.com/WorksinMagic/cowmilk-client#readme",
+  "dependencies": {
+    "react": "15.0.1",
+    "react-dnd": "2.1.4",
+    "react-dnd-html5-backend": "2.1.2",
+    "react-dom": "15.0.1",
+    "react-dropzone": "3.4.0",
+    "react-markdown": "2.2.0",
+    "react-redux": "4.4.5",
+    "react-router": "2.3.0",
+    "react-router-redux": "4.0.2",
+    "redux": "3.5.1",
+    "redux-thunk": "2.0.1",
+    "superagent": "1.8.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "babel-core": "^6.7.7",
+    "babel-loader": "^6.2.4",
+    "bundle-loader": "^0.5.4",
+    "css-loader": "^0.23.1",
+    "cssnano": "^3.5.2",
+    "key-mirror": "^1.0.1",
+    "path": "^0.12.7",
+    "postcss-grid": "^2.0.0",
+    "postcss-loader": "^0.8.2",
+    "precss": "^1.4.0",
+    "redux-devtools": "3.2.0",
+    "redux-logger": "2.6.1",
+    "style-loader": "^0.13.1",
+    "svg-react-loader": "^0.3.3",
+    "webpack": "^1.13.0"
+  }
+}
