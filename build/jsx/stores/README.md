@@ -1,0 +1,3 @@
+## Stores
+
+Redux store folder.
