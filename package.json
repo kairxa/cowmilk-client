@@ -57,8 +57,10 @@
     "postcss-grid": "^2.0.0",
     "postcss-loader": "^0.8.2",
     "precss": "^1.4.0",
+    "react-addons-test-utils": "^15.0.1",
     "redux-devtools": "3.2.0",
     "redux-logger": "2.6.1",
+    "sinon": "^1.17.3",
     "style-loader": "^0.13.1",
     "svg-react-loader": "^0.3.3",
     "webpack": "^1.13.0"
