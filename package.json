@@ -4,7 +4,11 @@
   "description": "Client repo for cowmilk, an open platform for hosting comics.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/karma/bin/karma start --single-run --browsers PhantomJS",
+    "test:watch": "./node_modules/karma/bin/karma start",
+    "webpack": "webpack --config webpack.app.dev.js",
+    "webpack:watch": "webpack -w --config webpack.app.dev.js",
+    "webpack:prod": "webpack --config webpack.app.prod.js"
   },
   "repository": {
     "type": "git",
