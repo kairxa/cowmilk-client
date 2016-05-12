@@ -26,7 +26,8 @@ module.exports = function(config) {
                         loader: 'babel',
                         exclude: path.resolve(__dirname, 'node_modules'),
                         query: {
-                            presets: [ 'es2015', 'react', 'airbnb' ]
+                            plugins: [ 'transform-decorators-legacy' ],
+                            presets: [ 'airbnb', 'react', 'es2015', 'stage-0' ]
                         }
                     },
                     {
@@ -79,7 +80,8 @@ module.exports = function(config) {
 
         babelPreprocessor: {
             options: {
-                presets: [ 'airbnb', 'react', 'es2015' ]
+                plugins: [ 'transform-decorators-legacy' ],
+                presets: [ 'airbnb', 'react', 'es2015', 'stage-0' ]
             }
         },
         reporters: ['progress'],

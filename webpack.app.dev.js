@@ -20,7 +20,7 @@ var config = {
     output: {
         path: path.resolve(__dirname, 'dist/javascript'),
         filename: '[name].js',
-        publicPath: '/assets/javascript/'
+        publicPath: '/javascript/'
     },
     module: {
         loaders: [
@@ -29,7 +29,8 @@ var config = {
                 exclude: [nodeDir],
                 loader: 'babel-loader',
                 query: {
-                    presets: [ 'es2015', 'react', 'airbnb' ]
+                    plugins: [ 'transform-decorators-legacy' ],
+                    presets: [ 'airbnb', 'react', 'es2015', 'stage-0' ]
                 }
             },
             {
@@ -65,7 +66,7 @@ var config = {
         new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js')
     ],
     resolve: {
-        modulesDirectories: ['web_modules', 'node_modules', 'jsx', 'common_layouts_components', 'assets']
+        modulesDirectories: ['web_modules', 'node_modules', 'jsx', 'assets']
     }
 };
 

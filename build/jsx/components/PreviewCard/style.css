@@ -1,0 +1,109 @@
+.wrapper {
+  margin: 0 -8px;
+
+  display: flex;
+}
+
+.container {
+  margin-bottom: 16px;
+
+  display: flex;
+  flex: 1 25%;
+  flex-wrap: wrap;
+  max-width: 33.33%;
+
+  padding: 0 8px;
+}
+
+.imageContainer {
+  flex: 1 100%;
+
+  position: relative;
+}
+
+.imageContainer::before {
+  display: block;
+
+  padding-top: 56.25%;
+
+  content: '';
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.textContainer {
+  border: solid 1px #a0a0a0;
+
+  display: flex;
+  flex: 1 100%;
+  flex-wrap: wrap;
+  align-self: baseline;
+
+  padding: 16px 14px 0;
+
+  background-color: rgba(255, 255, 255, 0.7);
+
+  font-size: 14px;
+
+  -webkit-transition: transform .3s cubic-bezier(0.55, 0, 0.5, 1);
+  -moz-transition: transform .3s cubic-bezier(0.55, 0, 0.5, 1);
+  -ms-transition: transform .3s cubic-bezier(0.55, 0, 0.5, 1);
+  -o-transition: transform .3s cubic-bezier(0.55, 0, 0.5, 1);
+  transition: transform .3s cubic-bezier(0.55, 0, 0.5, 1);
+}
+
+.title, .date, .totalViews, .totalLikes, .totalComments {
+  margin-bottom: 8px;
+}
+
+.date, .totalViews, .totalLikes, .totalComments, .description {
+  line-height: 22px;
+}
+
+.title, .date {
+  flex: 1 100%;
+
+  font-weight: 700;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.date, .totalViews, .totalLikes, .totalComments {
+  color: #a0a0a0;
+}
+
+.totalViews, .totalLikes {
+  flex: 1 25%;
+}
+
+.totalComments {
+  flex: 1 50%;
+
+  text-align: right;
+}
+
+.description {
+  margin-bottom: 16px;
+
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  max-height: 65px; /* Fallback for non-webkit */
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}

@@ -1,0 +1,18 @@
+.container {
+  margin-top: 16px;
+
+  border: solid 1px #dadada;
+  border-radius: 2px;
+
+  display: flex;
+
+  padding: 16px 16px 0;
+
+  position: relative;
+
+  background-color: #fafafa;
+
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(218,218,218,0.3);
+  -moz-box-shadow: 1px 1px 1px 1px rgba(218,218,218,0.3);
+  box-shadow: 1px 1px 1px 1px rgba(218,218,218,0.3);
+}
