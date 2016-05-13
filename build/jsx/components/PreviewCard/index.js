@@ -31,10 +31,17 @@ class PreviewCard extends React.Component {
         image: 'http://placehold.it/1600x900',
         totalViews: 0,
         totalLikes: 0,
-        totalComments: 0
+        totalComments: 0,
+        description: ''
     };
 
     render() {
+        // Since styling is a bit jerk for multi-line text (either it looks good, or it doesn't),
+        // there is only two option. Either supply a description for the whole cluster, or not at all.
+        // Even if you supply a description, it will only be limited for one line, instead of triple line like before.
+        // Unfortunately, we can't use text-overflow: ellipsis even if we use one line, because flex is a bit jumpy.
+        // Therefore, non-Chrome user will have to bear with slightly ugly view when there is long description supplied.
+
         // Just a shorthand for image preview below
         let backgroundImage = {
             backgroundImage: `url(${this.props.image})`

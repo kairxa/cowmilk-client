@@ -124,6 +124,6 @@ describe(`Given an empty <PreviewCard />, it`, function() {
     });
     
     it(`should not have any description`, function() {
-        expect(emptyWrapper.contains(<span className={PreviewCardStyles.description} />)).toBe(true);
-    })
+        expect(emptyWrapper.contains(<span className={PreviewCardStyles.description}>{''}</span>)).toBe(true);
+    });
 });
